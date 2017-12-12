@@ -16,6 +16,17 @@
                    />
 
 
+            <ListView VerticalOptions="Center"  x:Name="UserListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding DisplayName}"   />
+
+                        <!--<DataTemplate.Bindings x:Uid  ="{Binding FriendlyName}" />-->
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
 
         </StackLayout>
     </ContentPage.Content>

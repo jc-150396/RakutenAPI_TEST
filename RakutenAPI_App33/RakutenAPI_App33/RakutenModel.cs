@@ -10,7 +10,15 @@ namespace RakutenAPI_App33
 {
     public class RakutenModel
     {
-        [DataContract]
+
+       
+            public string booksGenreId { get; set; }
+            public string booksGenreName { get; set; }
+            public string genreLevel { get; set; }
+     
+
+
+        /*[DataContract]
         public class ServiceResult
         {
             [DataMember]
@@ -99,16 +107,7 @@ namespace RakutenAPI_App33
 
 
         } 
-
-
-
-
-
-
-
-
-
-
+    */
 
     }
 }

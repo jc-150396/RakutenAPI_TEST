@@ -5,8 +5,10 @@ using System.Text;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-
+using System.IO;
 using Xamarin.Forms;
+using System.Runtime.Serialization;
+
 
 namespace RakutenAPI_App33
 {
@@ -14,14 +16,10 @@ namespace RakutenAPI_App33
     {
         public List<RakutenModel> RakutenList;
 
-        public string Rakuten_URL = "https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?format=json&isbn=|&booksGenreId=001&applicationId=1008026300680682252";
+        public string Rakuten_URL = "https://app.rakuten.co.jp/services/api/BooksGenre/Search/20121128?format=json|&applicationId=1008026300680682252&booksGenreId=000";
 
         public async Task<List<RakutenModel>> AsyncGetWebData()
         {
-
-            //ISBNコード入力
-            var isbncode = ;
-
 
             RakutenList = new List<RakutenModel>();
 
