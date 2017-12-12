@@ -19,7 +19,9 @@
             <ListView VerticalOptions="Center"  x:Name="UserListView">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding DisplayName}"   />
+                        <TextCell Text="{Binding booksGenreId }"   />
+                        <TextCell Text="{Binding booksGenreName }"   />
+                        <TextCell Text="{Binding genreLevel }"   />
 
                         <!--<DataTemplate.Bindings x:Uid  ="{Binding FriendlyName}" />-->
 
